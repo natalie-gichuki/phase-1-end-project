@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spa Business</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="main-content">
+        <h1>Serenity Springs Spa</h1>
+        <h2>Indulge in Self-Care, Embrace Serenity.</h2>
+        <form id="service-form" action="" method="post">
+            <label for="client-name">Client Name:</label>
+            <input id="name" type="text" placeholder="Full Name">
+            <label for="email">Email:</label>
+            <input type="email" name="Email-adress" id="email" placeholder="Your email">
+            <label for="contact">Enter your phone number:</label>
+            <input type="tel" name="phone" id="phone" placeholder="Phone number">
+            <input id="submit" type="submit">
+
+        </form>
+
+
+        <div id="client-details">
+            <h2>Client Details:</h2>
+
+            <div class="full-info">
+                <div id="client-info"></div>
+                <div id="service-info"></div>
+            </div>
+
+            <div id="services"></div>
+
+            <div id="updated-modal" class="modal">
+                <div class="modal-content">
+                    <h2>Update Your Details.</h2>
+                    <span class="close">X</span>
+                    <label for="New-client-name">Client Name:</label>
+                    <input id="newName" type="text" placeholder="Full Name">
+
+                    <label for="newEmail">Email:</label>
+                    <input type="email" name="Email-adress" id="newEmail" placeholder="Your new email">
+
+                    <label for="newContact">Enter your phone number:</label>
+                    <input type="tel" name="phone" id="newPhone" placeholder="Phone number">
+
+                    <button id="save-update">Save Update</button>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="./script.js"></script>
+</body>
+
+</html>

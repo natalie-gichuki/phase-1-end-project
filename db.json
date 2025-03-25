@@ -1,0 +1,100 @@
+{
+  "services": [
+    {
+      "id": "1",
+      "service_name": "Aromatherapy Massage",
+      "description": "A relaxing massage using essential oils to promote relaxation and well-being.",
+      "cost": "$80",
+      "time_schedule": "10:00 AM - 7:00 PM",
+      "image": "https://voguebeautyandaesthetics.com/wp-content/uploads/2019/06/aromatherapy.jpg"
+    },
+    {
+      "id": "2",
+      "service_name": "Hot Stone Therapy",
+      "description": "A soothing treatment with heated stones to relieve muscle tension and stress.",
+      "cost": "$95",
+      "time_schedule": "9:00 AM - 6:00 PM",
+      "image": "https://sutherlandhouse.life/wp-content/uploads/2023/04/hot-stone-massage-sutherland-house.jpg"
+    },
+    {
+      "id": "3",
+      "service_name": "Hydrating Facial",
+      "description": "A deep hydration treatment to nourish and revitalize the skin.",
+      "cost": "$70",
+      "time_schedule": "11:00 AM - 8:00 PM",
+      "image": "https://cdn.prod.website-files.com/62bbdfb189b700c02f7d4865/6768d2392e09d43667b23fd9_6764ef20e6ba77515098206b_Screenshot%25202024-12-20%2520at%252012.11.58%25E2%2580%25AFPM.png"
+    },
+    {
+      "id": "4",
+      "service_name": "Body Scrub & Wrap",
+      "description": "An exfoliating body treatment followed by a nourishing wrap for smooth skin.",
+      "cost": "$100",
+      "time_schedule": "10:30 AM - 6:30 PM",
+      "image": " https://www.wnbspa.in/blog/uploads/images/image_big_8_5b76ab25836eb.jpg"
+    },
+    {
+      "id": "5",
+      "service_name": "Reflexology",
+      "description": "A foot massage focusing on pressure points to improve overall health and relaxation.",
+      "cost": "$60",
+      "time_schedule": "12:00 PM - 7:00 PM",
+      "image": "https://images.squarespace-cdn.com/content/v1/54555287e4b0b7b149a1f423/1505099904505-P50M3Z3RNIQULR0WCU9G/Foot+Massage+1.jpg"
+    },
+    {
+      "id": "6",
+      "service_name": "Deep Tissue Massage",
+      "description": "An intense massage targeting deep muscle layers to relieve tension and pain.",
+      "cost": "$90",
+      "time_schedule": "9:30 AM - 8:00 PM",
+      "image": "https://heavenlymassage.com/wp-content/uploads/2014/12/shop-sweedish-massage.jpg"
+    },
+    {
+      "id": "7",
+      "service_name": "Thai Yoga Massage",
+      "description": "A traditional Thai massage incorporating stretching and pressure point therapy.",
+      "cost": "$85",
+      "time_schedule": "10:00 AM - 7:00 PM",
+      "image": "https://www.sanapurna.ch/img/thai-yoga-massage-banner.jpg"
+    },
+    {
+      "id": "8",
+      "service_name": "Anti-Aging Facial",
+      "description": "A rejuvenating facial designed to reduce wrinkles and firm the skin.",
+      "cost": "$110",
+      "time_schedule": "9:00 AM - 6:00 PM",
+      "image": "https://www.impactcosmetic.com/wp-content/uploads/2023/03/5-best-anti-aging-facial-treatments.jpg"
+    },
+    {
+      "id": "9",
+      "service_name": "Seaweed Body Wrap",
+      "description": "A detoxifying wrap using nutrient-rich seaweed to refresh the skin.",
+      "cost": "$105",
+      "time_schedule": "11:00 AM - 8:00 PM",
+      "image": "https://www.homefieldgrangeretreat.co.uk/wp-content/uploads/2022/07/Weight-loss-wraps-jpg.webp"
+    },
+    {
+      "id": "10",
+      "service_name": "Scalp Massage",
+      "description": "A relaxing head massage to relieve stress and improve circulation.",
+      "cost": "$50",
+      "time_schedule": "12:30 PM - 6:30 PM",
+      "image": "https://blog.homedics.com/wp-content/uploads/2022/03/scalp-massage.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "15bb",
+      "name": "Natalie Gichuki",
+      "email": "nataliegichuki@gmail.com",
+      "phone": "0712345678"
+    }
+  ],
+  "serviceChosen": [
+    {
+      "id": "1c34",
+      "name": "Aromatherapy Massage",
+      "time": "10:00 AM - 7:00 PM",
+      "cost": "$80"
+    }
+  ]
+}
