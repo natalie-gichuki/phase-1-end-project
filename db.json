@@ -96,5 +96,17 @@
       "time": "10:00 AM - 7:00 PM",
       "cost": "$80"
     }
+  ],
+  "reviews": [
+    {
+      "id": "6e2d",
+      "client": "Natalie Gichuki",
+      "review": "i loved the services"
+    },
+    {
+      "id": "a00b",
+      "client": "Nadine",
+      "review": "They were slow"
+    }
   ]
 }

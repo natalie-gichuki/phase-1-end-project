@@ -212,3 +212,18 @@ footer p {
     margin-top: 60px;
 }
 
+.delete-review{
+    height: 2rem;
+    background: rgb(143, 71, 71);
+    border-radius: 5px;
+}
+
+.review-card{
+    background: #f0ede4;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: 1px solid #333;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #333;
+    width: 300px;
+}
