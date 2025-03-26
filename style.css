@@ -197,3 +197,14 @@ footer p {
     font-size: 2rem;
 }
 
+#call-us{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 30px;
+}
+
+#call-us .map iframe{
+    height: 400px;
+    width: 400px;
+}
+
