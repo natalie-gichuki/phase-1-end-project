@@ -81,7 +81,14 @@
       "image": "https://blog.homedics.com/wp-content/uploads/2022/03/scalp-massage.jpg"
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "id": "2a52",
+      "name": "Natalie Gichuki",
+      "email": "nataliegichuki@gmail.com",
+      "phone": "0712345678"
+    }
+  ],
   "serviceChosen": [],
   "reviews": []
 }
