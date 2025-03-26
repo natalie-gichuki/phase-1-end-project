@@ -5,9 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const clientInfo = document.getElementById("client-info");
     const serviceInfo = document.getElementById("service-info");
 
-
-
-
     fetch("http://localhost:3000/services")
         .then(response => response.json())
         .then(treatments => {
@@ -23,7 +20,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     <button class="book" id="${treatment.id}">Book Appointment</button>
                     <button class="delete">Delete</button>
                 `;
-
 
                 services.appendChild(serviceCard);
 
@@ -43,7 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
                     getServiceChosen();
                 }
                 fullUpdate();
-
 
                 function getServiceChosen() {
                     fetch("http://localhost:3000/serviceChosen")
@@ -80,15 +75,9 @@ document.addEventListener("DOMContentLoaded", () => {
                                             update.remove();
                                         })
                                 })
-
-
-
                             })
                         })
-
-
                 }
-
                 const bookButton = serviceCard.querySelector(".book");
                 bookButton.addEventListener("click", function (e) {
                     e.preventDefault();
@@ -100,8 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
                             name: treatment.service_name,
                             time: treatment.time_schedule,
                             cost: treatment.cost
-
-
                         })
 
                     })
@@ -244,13 +231,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
     reviewsForm.addEventListener("submit", (e) => {
         e.preventDefault();
-        const reviewUser =  document.getElementById("name-review");
+        const reviewUser = document.getElementById("name-review");
         const addedReview = document.getElementById("reviews");
 
         const userRvw = reviewUser.value.trim();
         const addedRvm = addedReview.value.trim();
 
-        if (userRvw && addedRvm){
+        if (userRvw && addedRvm) {
             const reviewCard = document.createElement("div");
             reviewCard.innerHTML = `
             <p><strong>Client Name: </strong>${userRvw}</p>
@@ -261,51 +248,51 @@ document.addEventListener("DOMContentLoaded", () => {
 
             fetch("http://localhost:3000/reviews", {
                 method: "POST",
-                headers: {"Content-Type": "application/json"},
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
                     client: userRvw,
                     review: addedRvm
                 })
             })
-            .then(response => response.json())
-            .then(data => data)
+                .then(response => response.json())
+                .then(data => data)
             reviewsForm.reset();
         }
     })
 
-    function getReview(){
+    function getReview() {
         fetch("http://localhost:3000/reviews")
-        .then(response => response.json())
-        .then(reviewDetails => {
+            .then(response => response.json())
+            .then(reviewDetails => {
 
-            document.querySelectorAll(".review-card").forEach(el => el.remove());
+                document.querySelectorAll(".review-card").forEach(el => el.remove());
 
-            reviewDetails.forEach(review => {
-                const reviewCard = document.createElement("div");
-                 reviewCard.className = "review-card";
-                 reviewCard.innerHTML = `
+                reviewDetails.forEach(review => {
+                    const reviewCard = document.createElement("div");
+                    reviewCard.className = "review-card";
+                    reviewCard.innerHTML = `
                    <p><strong>Client Name: </strong>${review.client}</p>
                    <p><strong>Review: </strong>${review.review}</P>
                    <button class="delete-review"> Delete Review</button>
                  `;
-                
-                 reviews.appendChild(reviewCard);
 
-                 const deleteReview = reviewCard.querySelector(".delete-review");
+                    reviews.appendChild(reviewCard);
 
-                 deleteReview.addEventListener("click", (e) => {
-                    e.preventDefault();
+                    const deleteReview = reviewCard.querySelector(".delete-review");
 
-                    fetch(`http://localhost:3000/reviews/${review.id}`, {
-                        method: "DELETE"
+                    deleteReview.addEventListener("click", (e) => {
+                        e.preventDefault();
+
+                        fetch(`http://localhost:3000/reviews/${review.id}`, {
+                            method: "DELETE"
+                        })
+                            .then(() => {
+                                reviewCard.remove();
+
+                            })
                     })
-                    .then(() => {
-                        reviewCard.remove();
-
-                    })
-                 })
+                })
             })
-        })
     }
     getReview();
 
