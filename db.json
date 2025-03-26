@@ -81,32 +81,7 @@
       "image": "https://blog.homedics.com/wp-content/uploads/2022/03/scalp-massage.jpg"
     }
   ],
-  "users": [
-    {
-      "id": "d767",
-      "name": "Natalie Gichuki",
-      "email": "nataliegichuki@gmail.com",
-      "phone": "0712345678"
-    }
-  ],
-  "serviceChosen": [
-    {
-      "id": "ef6b",
-      "name": "Aromatherapy Massage",
-      "time": "10:00 AM - 7:00 PM",
-      "cost": "$80"
-    }
-  ],
-  "reviews": [
-    {
-      "id": "6e2d",
-      "client": "Natalie Gichuki",
-      "review": "i loved the services"
-    },
-    {
-      "id": "a00b",
-      "client": "Nadine",
-      "review": "They were slow"
-    }
-  ]
+  "users": [],
+  "serviceChosen": [],
+  "reviews": []
 }
