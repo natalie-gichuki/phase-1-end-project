@@ -194,17 +194,21 @@ body {
 
 footer p {
     margin-top: 40px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 #call-us{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 #call-us .map iframe{
     height: 400px;
     width: 400px;
+}
+
+#call-us .numbers{
+    margin-top: 60px;
 }
 
