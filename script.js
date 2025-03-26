@@ -180,9 +180,9 @@ document.addEventListener("DOMContentLoaded", () => {
                             })
                                 .then(response => response.json())
                                 .then(userUpdate => {
-                                    users.querySelector(".name").textContent = `Name: ${userUpdate.name}`;
-                                    users.querySelector(".email").textContent = `Email: ${userUpdate.email}`;
-                                    users.querySelector(".phone").textContent = `Phone: ${userUpdate.phone}`;
+                                    users.querySelector(".name").innerHTML = `Name: ${userUpdate.name}`;
+                                    users.querySelector(".email").innerHTML = `Email: ${userUpdate.email}`;
+                                    users.querySelector(".phone").innerHTML = `Phone: ${userUpdate.phone}`;
 
                                 })
 
