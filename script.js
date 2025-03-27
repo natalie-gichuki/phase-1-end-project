@@ -18,21 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     <p><strong>Charge: </strong>${treatment.cost}</p>
                     <button> ${treatment.time_schedule}</button><br/>
                     <button class="book" id="${treatment.id}">Book Appointment</button>
-                    <button class="delete">Delete</button>
+                   
                 `;
 
                 services.appendChild(serviceCard);
 
-                const deleteButton = serviceCard.querySelector(".delete");
-                deleteButton.addEventListener("click", function (e) {
-                    e.preventDefault();
-                    fetch(`http://localhost:3000/services/${treatment.id}`, {
-                        method: "DELETE"
-                    })
-                        .then(() => {
-                            serviceCard.remove();
-                        });
-                });
+                
 
                 function fullUpdate() {
                     getUserDetails();
