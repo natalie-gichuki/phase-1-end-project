@@ -176,8 +176,7 @@ document.addEventListener("DOMContentLoaded", () => {
         e.preventDefault();
         document.getElementById("updated-modal").style.display = "none";
     })
-    //getUserDetails();
-
+    
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
