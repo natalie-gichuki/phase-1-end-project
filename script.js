@@ -63,6 +63,8 @@ document.addEventListener("DOMContentLoaded", () => {
                                 update.style.background = "#A8C3A8";
                                 update.style.borderRadius = "5px";
                                 update.style.border = "1px solid black";
+                                update.style.padding = "5px";
+                                update.style.marginTop = "5px";
 
                                 serviceInfo.appendChild(update);
                                 const dltButton = update.querySelector(".dlt");
@@ -123,6 +125,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <button class="remove">Remove</button>
                         </div>
                     `;
+                    users.style.marginTop ="25px";
 
                     clientInfo.appendChild(users);
 
@@ -208,6 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <button class="change">Update</button>
             <button class="remove">Remove</button>
                 `;
+            
 
             clientInfo.appendChild(users);
 
