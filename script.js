@@ -23,8 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 services.appendChild(serviceCard);
 
-                
-
                 function fullUpdate() {
                     getUserDetails();
                     getServiceChosen();
@@ -167,7 +165,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
                                 })
 
-
                         };
                     })
                 });
@@ -205,7 +202,6 @@ document.addEventListener("DOMContentLoaded", () => {
             
 
             clientInfo.appendChild(users);
-
 
             fetch("http://localhost:3000/users", {
                 method: "POST",
@@ -270,10 +266,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         }
                     })
 
-
                 })
-
-
 
             form.reset();
 
@@ -373,6 +366,5 @@ document.addEventListener("DOMContentLoaded", () => {
             })
     }
     getReview();
-
 
 })
