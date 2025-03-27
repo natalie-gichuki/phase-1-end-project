@@ -1,48 +1,102 @@
-WELCOME TO MY SPA BUSINESS PROJECT.
+WELCOME TO MY SPA BUSINESS PROJECT
+This project is built using:
 
-The project is built using HTML(for the page structure), CSS(for the page styling), Javascript(for functionality) and JSON(to work as te local backend server.)
+1.HTML (for the page structure)
 
-SUMMARY.
-The project allows one to:
-   1.Book a spa appointment of their choice.
-   2.Key in their details to the website.
-   3.Add a review on the spa services.
-   4.Delete a service when it's no longer offered.
-   5.Delete an appointment when its over or canceled.
+2.CSS (for styling)
+
+3.JavaScript (for functionality)
+
+4.JSON Server (to act as a local backend)
+
+SUMMARY
+This project allows users to:
+
+  -Book a spa appointment of their choice.
+
+   -Enter their details on the website.
+
+   -Add a review of the spa services.
+
+   -Delete a service when it's no longer offered.
+
+   -Cancel or delete an appointment once it's over.
 
 FILES
-HTML - I have one html file.
-   => Here I have used divs, forms, inputs, h-tags and paragraphs.
+1.HTML
+  -One HTML file is used.
 
-CSS - I have one CSS file.
-   => Here i have used various styling attributes like padding, margins, colors, box-shadow, borders, border-radious, height, width and different displays.
+   =>Includes various elements such as <div>, <form>, <input>, headings (<h1> - <h6>), and paragraphs (<p>).
 
-JAVASCRIPT - I have one js file.
-   => Here I used various features like functions, variables and event-listeners.
-   => I managed to use 3 different event listeners that is the click, submit, and the DOM contentloaded.
-   => I used the FETCH to:
-     1. Allow the app to access services from the JSON file and displays them. 
-     2.Allow the client to book a service of their choice.
-     3. Allow the client to add and delete a review.
-     4. Allow the client to input and display their details.
-     5.  Allow the client to  update and change incase the client filled in the wrong details.
-     6.Allow the management to delete an appointment that was cancelled or already attended.
+2.CSS
+  -One CSS file is used.
 
-     ( To achieve all this I used the 
-       1.GET[To fetch a service, user and review] 
-       2.POST[to add a new client and review]
-       3.PATCH[to update client details] 
-       4.DELETE[to delete reviews and client-details] methods.
-       )
+   =>Contains various styling attributes such as padding, margin, colors, box-shadow, borders, border-radius, height, width, and different display properties.
 
-HOW TO USE THE APPLICATION.
+3.JavaScript
+  -One JavaScript file is used.
 
-The client inputs their details and clicks submit. Once submitted the user will be able to view their details in the client details section andincase they are wrong they can update using the update button.
-They can also delete their details using the delete button.
+   =>Uses functions, variables, and event listeners to add interactivity.
 
-Once their details are input they can click the book appointment button on the appointment they would like and it will appear beside their details.
+Three different event listeners are utilized:
 
-The client can also delete the service incase they'd want to pick another.
+  I.click
 
-The client can add a review at the bottom of the page and their review would appear on the write.
+  II.submit
+
+  III.DOMContentLoaded
+
+FUNCTIONALITY
+This project uses the fetch API to interact with a local JSON server. The following operations are supported:
+
+1.Fetching data (GET request)
+
+  -Retrieves available services.
+
+  -Retrieves user details.
+
+  -Retrieves client reviews.
+
+2.Adding new entries (POST request)
+
+  -Allows users to book a service.
+
+  -Allows clients to submit a review.
+
+  -Allows users to input their details.
+
+3.Updating user details (PATCH request)
+
+  -Enables users to modify their information if incorrect.
+
+4.Deleting records (DELETE request)
+
+  -Users can delete their details.
+
+  -Clients can delete their reviews.
+
+  -Admins and clients can remove canceled or completed appointments.
+
+HOW TO USE THE APPLICATION
+The client enters their details and clicks "Submit."
+
+Their details will be displayed in the Client Details section.
+
+If there are any mistakes, they can click "Update" to modify them.
+
+They can also delete their details if necessary.
+
+Once their details are submitted, they can book an appointment by clicking the Book Appointment button on their chosen service.
+
+The selected service will appear beside their details.
+
+If they want to change their appointment, they can delete the selected service and book another.
+
+Clients can also leave a review at the bottom of the page.
+
+Once submitted, the review will be displayed on the right side of the page.
+
+
+
+This project was written and designed by Gichuki Natalie.
 
