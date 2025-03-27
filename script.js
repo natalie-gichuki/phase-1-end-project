@@ -201,9 +201,12 @@ document.addEventListener("DOMContentLoaded", () => {
         if (userName && userEmail && userContact) {
             const users = document.createElement("div");
 
-            users.innerHTML = `<strong>Name:</strong>${userName}<br/>
-            <strong>Email:</strong> ${userEmail}<br/>
-            <strong>Phone Number:</strong> ${userContact}
+            users.innerHTML = `
+            <p class="name"><strong>Name:</strong>${userName}<br/></p>
+            <p class="email"><strong>Email:</strong> ${userEmail}<br/></p>
+            <p class="phone"><strong>Phone Number:</strong> ${userContact}</p>
+            <button class="change">Update</button>
+            <button class="remove">Remove</button>
                 `;
 
             clientInfo.appendChild(users);
@@ -219,7 +222,64 @@ document.addEventListener("DOMContentLoaded", () => {
                 }),
             })
                 .then(response => response.json())
-                .then(data => data)
+                .then(userdtls => {
+
+                    const removeButton = users.querySelector(".remove");
+                    removeButton.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        fetch(`http://localhost:3000/users/${userdtls.id}`, {
+                            method: "DELETE"
+                        })
+                            .then(() => {
+                                users.remove();
+                            })
+
+                    })
+
+                    const changeButton = users.querySelector(".change");
+                    changeButton.addEventListener("click", function (e) {
+                        e.preventDefault();
+                        //display the modal
+                        document.getElementById("updated-modal").style.display = "block";
+                        //update the data
+                        document.getElementById("newName").value = userdtls.name;
+                        document.getElementById("newEmail").value = userdtls.email;
+                        document.getElementById("newPhone").value = userdtls.phone;
+                        //update changes when the button save changes is clicked.
+                        document.getElementById("save-update").onclick = function (e){
+                            e.preventDefault();
+
+                            const newName = document.getElementById("newName").value;
+                            const newEmail = document.getElementById("newEmail").value;
+                            const newContact = document.getElementById("newPhone").value;
+
+
+                            fetch(`http://localhost:3000/users/${userdtls.id}`, {
+                                method: "PATCH",
+                                headers: { "Content-Type": "application/json" },
+                                body: JSON.stringify({
+                                    name: newName,
+                                    email: newEmail,
+                                    phone: newContact
+                                })
+
+                            })
+                                .then(response => response.json())
+                                .then(userUpdate => {
+                                    users.querySelector(".name").innerHTML = `Name: ${userUpdate.name}`;
+                                    users.querySelector(".email").innerHTML = `Email: ${userUpdate.email}`;
+                                    users.querySelector(".phone").innerHTML = `Phone: ${userUpdate.phone}`;
+
+                                })
+
+                        }
+                    })
+
+
+                })
+
+
+
             form.reset();
 
         }
