@@ -246,7 +246,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         document.getElementById("newEmail").value = userdtls.email;
                         document.getElementById("newPhone").value = userdtls.phone;
                         //update changes when the button save changes is clicked.
-                        document.getElementById("save-update").onclick = function (e){
+                        document.getElementById("save-update").onclick = function (e) {
                             e.preventDefault();
 
                             const newName = document.getElementById("newName").value;
@@ -302,7 +302,16 @@ document.addEventListener("DOMContentLoaded", () => {
             reviewCard.innerHTML = `
             <p><strong>Client Name: </strong>${userRvw}</p>
             <p><strong>Review: </strong>${addedRvm}</P>
+            <button class="delete-review"> Delete Review</button>
             `;
+            reviewCard.style.borderRadius = "5px";
+            reviewCard.style.padding = "10px";
+            reviewCard.style.border = "1px solid #333";
+            reviewCard.style.marginTop = "20px";
+            reviewCard.style.boxShadow = "2px 2px 5px #333";
+            reviewCard.style.background = "#f0ede4";
+            reviewCard.style.width = "300px";
+
 
             reviews.appendChild(reviewCard);
 
@@ -315,7 +324,21 @@ document.addEventListener("DOMContentLoaded", () => {
                 })
             })
                 .then(response => response.json())
-                .then(data => data)
+                .then(reviewdtls => {
+                    const deleteReview = reviewCard.querySelector(".delete-review");
+
+                    deleteReview.addEventListener("click", (e) => {
+                        e.preventDefault();
+
+                        fetch(`http://localhost:3000/reviews/${reviewdtls.id}`, {
+                            method: "DELETE"
+                        })
+                            .then(() => {
+                                reviewCard.remove();
+
+                            })
+                    })
+                })
             reviewsForm.reset();
         }
     })
