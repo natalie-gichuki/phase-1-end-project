@@ -301,11 +301,11 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             reviewCard.style.borderRadius = "5px";
             reviewCard.style.padding = "10px";
-            reviewCard.style.border = "1px solid #333";
+            
             reviewCard.style.marginTop = "20px";
             reviewCard.style.boxShadow = "2px 2px 5px #333";
             reviewCard.style.background = "#f0ede4";
-            reviewCard.style.width = "300px";
+            reviewCard.style.width = "400px";
 
 
             reviews.appendChild(reviewCard);
