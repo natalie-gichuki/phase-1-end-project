@@ -114,7 +114,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         <button class="remove">Remove</button>
                         </div>
                     `;
-                    users.style.marginTop ="25px";
+                    users.style.marginTop = "25px";
 
                     clientInfo.appendChild(users);
 
@@ -199,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <button class="change">Update</button>
             <button class="remove">Remove</button>
                 `;
-            
+
 
             clientInfo.appendChild(users);
 
@@ -294,7 +294,7 @@ document.addEventListener("DOMContentLoaded", () => {
             `;
             reviewCard.style.borderRadius = "5px";
             reviewCard.style.padding = "10px";
-            
+
             reviewCard.style.marginTop = "20px";
             reviewCard.style.boxShadow = "2px 2px 5px #333";
             reviewCard.style.background = "#f0ede4";
