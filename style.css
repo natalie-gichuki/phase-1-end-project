@@ -156,13 +156,11 @@ body {
 }
 
 .reviews{
-    background: #909e90;
+    background: #b3bdb3;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-left: 20px;
-    /*justify-content: center;
-    flex-direction: column;
-    align-items: center;*/
+    
     margin-top: 40px;
     border: 1px solid black;
     border-radius: 10px;
@@ -176,8 +174,7 @@ body {
 
 .reviews form{
     display: flex;
-    /*justify-content: center;
-    /*align-items: center;*/
+    
     flex-direction: column;
 }
 
