@@ -195,12 +195,16 @@ body {
 footer p {
     margin-top: 40px;
     font-size: 1.5rem;
+    text-align: center;
 }
 
 #call-us{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 60px;
+    background: #f0ede4;
+    padding: 10px;
+    border-radius: 5px;
 }
 
 #call-us .map iframe{
