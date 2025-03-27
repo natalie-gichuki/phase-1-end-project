@@ -97,5 +97,11 @@
       "cost": "$80"
     }
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "id": "69a9",
+      "client": "Natalie Gichuki",
+      "review": "jkiuy"
+    }
+  ]
 }
