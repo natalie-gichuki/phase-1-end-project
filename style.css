@@ -257,7 +257,53 @@ body {
         justify-content: center;
         flex-direction: column!important;
     }
-
+    .intro {
+        background-image: url(./Images/spa4.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 600px;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+       
+        background-blend-mode: multiply;
+    
+    }
+    
+    .intro h3 {
+        top: 3%;
+        left: 5%;
+        position: absolute;
+        font-size: 1.5rem!important;
+        color: aliceblue;
+    }
+    
+    .intro h1 {
+    
+        bottom: 50%;
+        left: 5%;
+        position: absolute;
+        font-size: 2rem!important;
+        color: aliceblue;
+    }
+    
+    .intro h2 {
+        top: 45%;
+        left: 5%;
+        position: absolute;
+        color: aliceblue;
+    }
+    
+    .intro p {
+        top: 60%;
+        left: 5%;
+        position: absolute;
+        font-weight: bold;
+        color: aliceblue;
+    
+    }
+    
+    
    
 }
 
