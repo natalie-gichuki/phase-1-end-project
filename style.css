@@ -236,6 +236,25 @@ body {
         gap: 40px;
     }
 
+    footer p {
+        margin-top: 0% !important;
+    }
+
+    footer {
+        height: 100% !important;
+        background: #bbc0be;
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .logos img {
+        height: 40px !important;
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+    }
+
+
 
 }
 
@@ -394,9 +413,16 @@ body {
 }
 
 footer p {
-    margin-top: 40px;
+
     font-size: 1.5rem;
     text-align: center;
+
+}
+
+footer {
+    height: 250px;
+    background: #bbc0be;
+    width: 100%;
 }
 
 #call-us {
@@ -443,7 +469,32 @@ footer p {
     margin-top: 10px;
 }
 
- .bk{
+.bk {
     margin-top: 30px;
 
+}
+
+.logos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logos img {
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 10px;
+    margin-top: 3%;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.footer-content p{
+margin-left: 20px;
+text-decoration: underline;
 }
