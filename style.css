@@ -14,11 +14,19 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(rgb(224, 224, 221), #969c9a);
-    border: 1px solid black;
-    border-radius: 10px;
+   /* background: linear-gradient(rgb(224, 224, 221), #969c9a);*/
+    /*border: 1px solid black;
+    border-radius: 10px;*/
     padding: 20px 15px 20px 15px;
     box-shadow: 5px 5px 7px #333;
+}
+
+.main-content #services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    justify-content: space-around;
 }
 
 @media (max-width: 768px) {

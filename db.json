@@ -83,25 +83,19 @@
   ],
   "users": [
     {
-      "id": "b098",
+      "id": "f7c2",
       "name": "natalie gichuki",
       "email": "nataliegichuki@gmail.com",
-      "phone": "0704111222"
+      "phone": "0712345678"
     }
   ],
   "serviceChosen": [
     {
-      "id": "a9f3",
+      "id": "b21e",
       "name": "Aromatherapy Massage",
       "time": "10:00 AM - 7:00 PM",
       "cost": "$80"
     }
   ],
-  "reviews": [
-    {
-      "id": "69a9",
-      "client": "Natalie Gichuki",
-      "review": "jkiuy"
-    }
-  ]
+  "reviews": []
 }
