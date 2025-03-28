@@ -41,7 +41,7 @@ body {
     height: 600px;
     position: relative;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Dark color with 50% opacity */
+   
     background-blend-mode: multiply;
 
 }

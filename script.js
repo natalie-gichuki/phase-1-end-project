@@ -366,22 +366,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
     getReview();
 
-
+//add darkmode 
     const toggleButton = document.getElementById("dark-mode-toggle");
 
-    // Check local storage for dark mode preference
+   
     if (localStorage.getItem("dark-mode") === "enabled") {
-        document.body.classList.add("dark-mode");
+        document.body.className = "dark-mode";
     }
     
     toggleButton.addEventListener("click", function () {
-        document.body.classList.toggle("dark-mode");
-    
-        // Save the preference in local storage
-        if (document.body.classList.contains("dark-mode")) {
-            localStorage.setItem("dark-mode", "enabled");
-        } else {
+        if (document.body.className === "dark-mode") {
+            document.body.className = "";  
             localStorage.setItem("dark-mode", "disabled");
+        } else {
+            document.body.className = "dark-mode";  
+            localStorage.setItem("dark-mode", "enabled");
         }
     });
 
