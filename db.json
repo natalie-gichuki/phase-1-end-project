@@ -83,7 +83,7 @@
   ],
   "users": [
     {
-      "id": "ef7a",
+      "id": "3c18",
       "name": "natalie gichuki",
       "email": "nataliegichuki@gmail.com",
       "phone": "0712345678"
@@ -91,11 +91,22 @@
   ],
   "serviceChosen": [
     {
-      "id": "66ac",
-      "name": "Aromatherapy Massage",
-      "time": "10:00 AM - 7:00 PM",
-      "cost": "$80"
+      "id": "c17c",
+      "name": "Scalp Massage",
+      "time": "12:30 PM - 6:30 PM",
+      "cost": "$50"
     }
   ],
-  "reviews": []
+  "reviews": [
+    {
+      "id": "03c1",
+      "client": "Natalie Gichuki",
+      "review": "k"
+    },
+    {
+      "id": "9a58",
+      "client": "Nadine",
+      "review": "jk"
+    }
+  ]
 }

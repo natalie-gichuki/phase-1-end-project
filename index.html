@@ -12,55 +12,83 @@
     <div class="intro">
         <div class="nav">
             <h3>SERENITY SPRINGS</h3>
-           
+
         </div>
         <h1>ENJOY A RELAXING DAY</h1>
         <h2>Indulge in Self-Care, Embrace Serenity.</h2>
-        <p>To create a serene and rejuvenating sanctuary where guests can escape the stresses of daily life,<br/> reconnect
-            with their well-being, and experience holistic relaxation through luxurious treatments,<br/> natural therapies,
+        <p>To create a serene and rejuvenating sanctuary where guests can escape the stresses of daily life,<br />
+            reconnect
+            with their well-being, and experience holistic relaxation through luxurious treatments,<br /> natural
+            therapies,
             and a tranquil atmosphere.</p>
     </div>
     <div class="main-content">
+        <h2>Services Offered:</h2>
+        <div id="services"></div>
+        <h2 class="bk">Book an appointment with us</h2>
+        <div class="info">
 
-        <form id="service-form" action="" method="post">
-            <label for="client-name">Client Name:</label>
-            <input id="name" type="text" placeholder="Full Name">
-            <label for="email">Email:</label>
-            <input type="email" name="Email-adress" id="email" placeholder="Your email">
-            <label for="contact">Enter your phone number:</label>
-            <input type="tel" name="phone" id="phone" placeholder="Phone number">
-            <input id="submit" type="submit">
+            <div class="frm">
+                <form id="service-form" action="" method="post">
+                    <label for="client-name">Client Name:</label>
+                    <input id="name" type="text" placeholder="Full Name">
+                    <label for="email">Email:</label>
+                    <input type="email" name="Email-adress" id="email" placeholder="Your email">
+                    <label for="contact">Enter your phone number:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Phone number">
+                    <input id="submit" type="submit">
 
-        </form>
-
-
-        <div id="client-details">
-            <h2>Client Details:</h2>
-
-            <div class="full-info">
-                <div id="client-info"></div>
-                <div id="service-info"></div>
+                </form>
             </div>
 
-            <div id="services"></div>
+            <div id="client-details">
 
-            <div id="updated-modal" class="modal">
-                <div class="modal-content">
-                    <h2>Update Your Details.</h2>
-                    <span class="close">X</span>
-                    <label for="New-client-name">Client Name:</label>
-                    <input id="newName" type="text" placeholder="Full Name">
+                <h2>Client Details:</h2>
+                <div class="full-info">
+                    <div id="client-info"></div>
+                    <div id="service-info"></div>
+                </div>
 
-                    <label for="newEmail">Email:</label>
-                    <input type="email" name="Email-adress" id="newEmail" placeholder="Your new email">
 
-                    <label for="newContact">Enter your phone number:</label>
-                    <input type="tel" name="phone" id="newPhone" placeholder="Phone number">
 
-                    <button id="save-update">Save Update</button>
+                <div id="updated-modal" class="modal">
+                    <div class="modal-content">
+                        <h2>Update Your Details.</h2>
+                        <span class="close">X</span>
+                        <label for="New-client-name">Client Name:</label>
+                        <input id="newName" type="text" placeholder="Full Name">
+
+                        <label for="newEmail">Email:</label>
+                        <input type="email" name="Email-adress" id="newEmail" placeholder="Your new email">
+
+                        <label for="newContact">Enter your phone number:</label>
+                        <input type="tel" name="phone" id="newPhone" placeholder="Phone number">
+
+                        <button id="save-update">Save Update</button>
+                    </div>
                 </div>
             </div>
         </div>
+        <h2>Drop us a comment:</h2>
+        <div class="reviews">
+
+            <div class="form-review">
+
+                <h2>Client Reviews:</h2>
+                <form action="" method="post" id="reviews-form">
+                    <label for="name">Client Name:</label>
+                    <input type="text" id="name-review" placeholder="Full Name">
+
+                    <label for="reviews">Reviews:</label>
+                    <textarea id="reviews" placeholder="My Reviews"></textarea>
+
+                    <input type="submit" class="submit-review">
+                </form>
+
+            </div>
+            <div id="updated-reviews"></div>
+        </div>
+
 
         <div id="call-us">
             <div class="numbers">
@@ -83,22 +111,6 @@
             </div>
         </div>
 
-        <div class="reviews">
-            <div class="form-review">
-
-                <h2>Client Reviews:</h2>
-                <form action="" method="post" id="reviews-form">
-                    <label for="name">Client Name:</label>
-                    <input type="text" id="name-review" placeholder="Full Name">
-
-                    <label for="reviews">Reviews:</label>
-                    <textarea id="reviews" placeholder="My Reviews"></textarea>
-
-                    <input type="submit" class="submit-review">
-                </form>
-            </div>
-            <div id="updated-reviews"></div>
-        </div>
 
         <footer>
             <p>&#169 serenityspringsspa</p>

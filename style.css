@@ -6,7 +6,7 @@ html {
 body {
     min-height: 100%;
     min-width: 100%;
-    background: linear-gradient(#f0ede4);
+    background: #eeedeb;
 }
 
 .main-content {
@@ -27,6 +27,12 @@ body {
     flex-wrap: wrap;
     margin-left: 50px;
     justify-content: space-around;
+
+}
+
+.main-content h2 {
+    font-size: 3rem;
+
 }
 
 .intro {
@@ -36,12 +42,13 @@ body {
     background-size: cover;
     height: 600px;
     position: relative;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark color with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Dark color with 50% opacity */
     background-blend-mode: multiply;
-    
+
 }
 
-.intro h3{
+.intro h3 {
     top: 3%;
     left: 5%;
     position: absolute;
@@ -71,11 +78,11 @@ body {
     position: absolute;
     font-weight: bold;
     color: aliceblue;
-    
+
 }
 
 
-.intro .nav{
+.intro .nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -223,7 +230,11 @@ body {
 
     }
 
-
+    .info {
+        display: flex !important;
+        flex-direction: column;
+        gap: 40px;
+    }
 
 
 }
@@ -268,6 +279,19 @@ body {
     border-radius: 10px;
     margin-left: 235px;
 
+}
+
+#service-form {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+#service-form input {
+    margin-bottom: 30px;
+    height: 2rem;
 }
 
 .modal {
@@ -335,9 +359,9 @@ body {
     grid-template-columns: repeat(2, 1fr);
     margin-left: 20px;
 
-    margin-top: 40px;
-    border: 1px solid black;
-    border-radius: 10px;
+    margin-top: 30px;
+    /*border: 1px solid black;*/
+    border-radius: 5px;
     padding: 20px 15px 20px 15px;
     box-shadow: 5px 5px 7px #333;
 }
@@ -379,18 +403,20 @@ footer p {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     margin-top: 60px;
-    background: #f0ede4;
+    background: #eeedeb;
     padding: 10px;
     border-radius: 5px;
+    width: 100%;
 }
 
 #call-us .map iframe {
     height: 400px;
-    width: 400px;
+    width: 600px;
 }
 
 #call-us .numbers {
     margin-top: 60px;
+    margin-left: 50px;
 }
 
 .delete-review {
@@ -402,9 +428,22 @@ footer p {
 .review-card {
     background: #f0ede4;
     border-radius: 5px;
-    margin-top: 20px;
-
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    box-shadow: 2px 2px 5px #333;
+    /*box-shadow: 2px 2px 5px #333;*/
     width: 400px;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-top: 10px;
+}
+
+ .bk{
+    margin-top: 30px;
+
 }
