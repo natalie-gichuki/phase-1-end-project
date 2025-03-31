@@ -83,30 +83,31 @@
   ],
   "users": [
     {
-      "id": "3c18",
-      "name": "natalie gichuki",
+      "id": "74ed",
+      "name": "Natalie Gichuki",
       "email": "nataliegichuki@gmail.com",
       "phone": "0712345678"
+    },
+    {
+      "id": "a597",
+      "name": "Nadine Waititu",
+      "email": "nadinewaiti@gmail.com",
+      "phone": "0723456780"
     }
   ],
   "serviceChosen": [
     {
-      "id": "c17c",
+      "id": "c359",
+      "name": "Seaweed Body Wrap",
+      "time": "11:00 AM - 8:00 PM",
+      "cost": "$105"
+    },
+    {
+      "id": "dc40",
       "name": "Scalp Massage",
       "time": "12:30 PM - 6:30 PM",
       "cost": "$50"
     }
   ],
-  "reviews": [
-    {
-      "id": "03c1",
-      "client": "Natalie Gichuki",
-      "review": "k"
-    },
-    {
-      "id": "9a58",
-      "client": "Nadine",
-      "review": "jk"
-    }
-  ]
+  "reviews": []
 }

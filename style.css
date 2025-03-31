@@ -581,3 +581,11 @@ body.dark-mode #call-us{
     background: #333;
 }
 
+body.dark-mode #updated-modal{
+    color: #333;
+    background:rgba(0, 0, 0, 0.5)
+}
+
+body.dark-mode #updated-modal .modal-content{
+    background: rgb(250, 224, 192);
+}
